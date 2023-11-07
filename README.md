@@ -1,6 +1,6 @@
 ## Our Project
 
-[WACV 2024] Augment the Pairs: Semantics-Preserving Image-Caption Pair Augmntation for Grounding-Based Vision and Language Models. ([Github](https://arxiv.org/pdf/2311.02536.pdf))
+[WACV 2024] Augment the Pairs: Semantics-Preserving Image-Caption Pair Augmntation for Grounding-Based Vision and Language Models. ([arXiv](https://arxiv.org/pdf/2311.02536.pdf))
 
 If you find this repository useful please cite our paper :)
 ```
