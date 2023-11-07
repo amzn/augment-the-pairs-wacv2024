@@ -1,6 +1,16 @@
 ## Our Project
 
-[WACV 2024] Augment the Pairs: Semantics-Preserving Image-Caption Pair Augmntation for Grounding-Based Vision and Language Models. (Paper link: TBD)
+[WACV 2024] Augment the Pairs: Semantics-Preserving Image-Caption Pair Augmntation for Grounding-Based Vision and Language Models. ([Github](https://arxiv.org/pdf/2311.02536.pdf))
+
+If you find this repository useful please cite our paper :)
+```
+    @article{yi2023augment,
+      title={Augment the Pairs: Semantics-Preserving Image-Caption Pair Augmentation for Grounding-Based Vision and Language Models},
+      author={Jingru Yi and Burak Uzkent and Oana Ignat and Zili Li and Amanmeet Garg and Xiang Yu and Linda Liu},
+      journal={arXiv preprint arXiv:2311.02536},
+      year={2023}
+    }
+```
 
 ## Introduction
 
@@ -27,9 +37,9 @@ Propose to use text-conditioned and text-unconditioned augmentations in the phra
 
 ## How to start
 
-The code in this repo only contains the augmentations. In our paper, we utilize the [MDETR](https://github.com/ashkamath/mdetr) as base architecture. You may incorporate the augmentations into different phrase grounding architectures. 
+The code in this repo only contains the augmentation part. In our paper, we utilize the [MDETR](https://github.com/ashkamath/mdetr) as base architecture. You may incorporate the augmentations into different phrase grounding architectures. 
 
-To use apply `hflip` augmentation randomly, we insert the augmentation to `ConvertCocoPolysToMask` function of [MDETR:datasets/coco.py](https://github.com/ashkamath/mdetr/blob/ea09acc44ca067072c4b143b726447ee7ff66f5f/datasets/coco.py#L152), where annotations are prepared when loading the training dataset. In evaluation, we disable the augmentation functions.  Other augmentations can be applied after data preparation.
+To apply `hflip` augmentation randomly, we insert the augmentation to `ConvertCocoPolysToMask` function of [MDETR:datasets/coco.py](https://github.com/ashkamath/mdetr/blob/ea09acc44ca067072c4b143b726447ee7ff66f5f/datasets/coco.py#L152), where annotations are prepared when loading the training dataset. Other augmentations can be applied after data preparation. In evaluation/validaton, we disable the augmentation functions.  
 
 ## Security
 
